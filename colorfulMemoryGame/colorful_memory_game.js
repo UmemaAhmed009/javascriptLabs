@@ -78,10 +78,9 @@ function startGameTimer(timeLeft) {
 
         if (timeLeft === 0) {
             clearInterval(gameInterval);
-            let timeLeft = 30;
             alert('Game Over!');
             startbtn.disabled = false;
         }
     }, 1000);
-    startbtn.addEventListener('click', startGame);
 }
+startbtn.addEventListener('click', startGame);
